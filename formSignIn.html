@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="formSignIn.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="left-side">
+        <div class="Logo">
+          <img src="./assets/images/Logo.png" alt="Logo" />
+        </div>
+        <div id="Header">
+          <h1>For Individuals</h1>
+          <p class="mobile-only">
+            Inspiring wholesome harmony for the mind, body and spirit, for
+            everyone, everywhere.
+          </p>
+          <p class="desktop-only">
+            Start benefiting from the wellness experience. For companies looking
+            on increasing productivity, and improving organization wellness.
+          </p>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <section class="form-group">
+          <form>
+            <div class="group1">
+              <section class="column">
+                <label for="First-name">First Name</label>
+                <div class="border-input">
+                  <input
+                    type="text"
+                    name="First-name"
+                    id="First-name"
+                    placeholder="Tolu"
+                  />
+                </div>
+              </section>
+              <section class="column">
+                <label for="Last-name">Last Name</label>
+                <input type="text" name="Last-name" id="Last-name" required />
+              </section>
+            </div>
+
+            <div class="group1">
+              <section class="column">
+                <label for="Gender">Gender</label>
+                <div class="input-container">
+                  <input
+                    type="text"
+                    name="Gender"
+                    id="Gender"
+                    placeholder="Select here"
+                  />
+                  <img
+                    src="./assets/images/angle-down.resize.png"
+                    alt="icon"
+                    class="input-icon"
+                  />
+                </div>
+              </section>
+              <section class="column">
+                <label for="Date-of-Birth">Date of Birth</label>
+
+                <div class="input-container">
+                  <input type="text" name="Date-of-Birth" id="Date-of-Birth" />
+                  <img src="./assets/images/calendar-alt.png" alt="icon"
+                  class="input-icon"
+                </div>
+              </section>
+            </div>
+
+            <div class="group1">
+              <section class="column">
+                <label for="Weight">Weight (KG)</label>
+                <input
+                  type="text"
+                  name="Weight"
+                  id="Weight"
+                  placeholder="Enter Weight"
+                />
+              </section>
+              <section class="column">
+                <label for="Height">Height (CM)</label>
+                <input
+                  type="text"
+                  name="Height"
+                  id="Height"
+                  placeholder="Enter height here.."
+                />
+              </section>
+            </div>
+
+            <div class="group2">
+              <label for="Activity-level">Activity Level</label>
+              <div class="input-container">
+                <input
+                  type="text"
+                  name="Activity-level"
+                  id="Activity-level"
+                  placeholder="Select here"
+                />
+                <img
+                  src="./assets/images/angle-down.resize.png"
+                  alt="icon"
+                  class="input-icon"
+                />
+              </div>
+            </div>
+
+             <div class="group2">
+              <label for="Password">Password</label>
+              <div class="input-container">
+                <input type="Password" name="Password" id="Password" required />
+                <img
+                  src="./assets/images/password.icon.png"
+                  alt="icon"
+                  class="input-icon"
+                />
+              </div>
+            </div>
+
+            <div class="group2">
+              <div class="submit">
+                <input type="submit" value="Register" />
+              </div>
+            </div>
+          </form>
+        </section>
+        <div class="footer">
+          <footer>
+            <p>
+              By clicking Register, you agree to our
+              <span>Terms of Use</span> and our <span>Privacy Policy</span>
+            </p>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

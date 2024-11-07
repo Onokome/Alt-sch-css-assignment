@@ -1,0 +1,74 @@
+body{
+    background-color: hsl(0, 9%, 11%);
+    padding: 32px;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.card{
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    padding-top: 32px;
+    padding-bottom: 16px;
+    padding-inline: 16px;
+    margin-left: 32px;
+    margin-block-start: 60px;
+    border-radius: 8px;
+    font-size: larger;
+}
+
+h1{
+    background-color: deeppink;
+    text-align: center;
+    padding: 12px 28px;
+    border-radius: 4px;
+    margin-bottom: 32px;
+    margin-top: -48px;
+}
+@media (max-width: 390px){
+
+    body{
+        padding: 16px;
+    }
+    .card{
+        background-color: white;
+        width: 300px;
+        height: 150px;
+        padding-top: 32px;
+        padding-bottom: 16px;
+        padding-inline: 16px;
+        margin-left: 8px;
+        margin-block-start: 40px;
+        border-radius: 8px;
+        font-size: large;
+    }
+
+}
+
+
+
+.lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;font-style: normal;
+    
+  }
+  
+  .lato-regular-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  

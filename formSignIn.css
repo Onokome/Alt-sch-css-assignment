@@ -1,0 +1,312 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+
+body {
+  background-color: hsla(170, 60%, 98%, 1);
+}
+
+.main {
+  padding-inline-start: 24px;
+}
+
+
+img {
+  padding-block-start: 74px;
+  
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 29.4px;
+  letter-spacing: -0.8px;
+  margin-block-start: 40px;
+  margin-block-end: 6px;
+  width: 327px;
+  color: hsla(174, 100%, 2%, 1);
+}
+
+p.mobile-only {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 25px;
+  color: hsla(0, 0%, 45%, 1);
+  margin-block-start: 6px;
+  margin-block-end: 40px;
+  width: 327px;
+}
+
+section.form-group{
+  background-color: hsla(0, 0%, 100%, 1);
+  width: 327px;
+  display: flex;
+  border-radius: 1px;
+  padding-block-start: 24px;
+  padding-inline-start: 16px;
+}
+
+label {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600px;
+  font-style: normal;
+  width: 295px;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.1px;
+  padding-block-end: 2px;
+  margin-block-end: 10px;
+  color: hsla(208, 96%, 10%, 1);
+  font-weight: bolder;
+}
+
+.form-group input::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300px;
+  font-style: normal;
+  letter-spacing: 0.2px;
+  color: hsla(0, 0%, 45%, 1);
+  padding-inline-start: 16px;
+  padding-inline-end: 52px;
+}
+
+.form-group input {
+  width: 295px;
+  height: 48px;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.06); 
+  margin-block-end: 24px;
+  border: 1px solid hsla(0, 0%, 94%, 1)
+}
+.form-group input:hover {
+  border-color: hsla(174, 62%, 47%, 1)
+}
+.form-group input:focus {
+  border-color: hsla(174, 62%, 47%, 1);
+  outline: none;
+  
+}
+
+
+.input-container {
+  position: relative; 
+  width: 295px; 
+}
+
+.input-container .input-icon {
+  position: absolute;
+  top: -60px;
+  right: 10px; 
+  width: 24px; 
+  pointer-events: none; 
+}
+
+div.submit input{
+  background-color: hsla(174, 62%, 47%, 1);
+  color: hsla(0, 0%, 100%, 1);
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600px;
+  font-style: normal;
+  letter-spacing: 0.2px;
+  line-height: 16px;
+  font-size: 16px;
+  padding-block-start: 16px;
+padding-block-end: 16px;
+font-weight: bolder;
+}
+
+ div .border-input input {
+ border: 1px solid hsla(174, 62%, 47%, 1);
+  box-sizing: border-box;
+ }
+
+ .footer p{
+  width: 316px;
+  line-height: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  letter-spacing: 0.2px;
+  text-align: center;
+  font-size: 14px;
+  margin-inline-start: 6px;
+  margin-inline-end: 29px;
+  margin-block-start: 24px;
+
+
+  >span{
+    color: hsla(174, 62%, 47%, 1);
+    font-weight: 500px;
+  }
+  
+ }
+
+p.desktop-only{
+  display: none;
+}
+
+@media (min-width: 1024px){
+div.main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-inline-start: 0px;
+}
+
+p.desktop-only{
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 25px;
+  color: hsla(0, 0%, 45%, 1);
+  margin-block-start: 10px;
+ min-width: 460px;
+}
+
+p.mobile-only{
+  display: none;
+}
+
+div .left-side{
+  margin-inline-start: 140px;
+  padding-block-start: 205px;
+  padding-inline-end: 60px;
+  margin-block-end: 360px;
+  min-width: 460px;
+}
+
+img{
+  width: 77.3px;
+  margin-block-end: 50px;
+  
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 50px;
+  letter-spacing: -0.8px;
+  margin-block-end: 10px;
+  min-width: 268px;
+  color: hsla(174, 100%, 2%, 1);
+}
+
+section.form-group{
+  width: 580px;
+  margin-block-start: 81px;
+  margin-inline-end: 140px;
+  margin-inline-start: 60px;
+  padding-inline-start: 40px;
+  padding-inline-end: 40px;
+  padding-block-start: 40px;
+  
+}
+.group1{
+  display: flex;
+  gap: 24px;
+  width: 500px;
+}
+.column label{
+  width:238px ;
+}
+
+.column input{
+  width: 238px;
+}
+
+.input-container {
+  position: relative; 
+  width: 238px;
+}
+
+.input-container .input-icon {
+  position: absolute;
+  top: -60px;
+  right: 10px; 
+  width: 24px; 
+  pointer-events: none; 
+}
+
+
+div.group2{
+  width:500px
+  }
+
+  div.group2 label{
+    width: 333px;
+  }
+  div.group2 input{
+    width: 500px;
+  }
+ 
+  .footer p{
+    width: 463px;
+    margin-inline-start: 58px;
+    font-size: 12px;
+    
+  }
+}
+
+
+  

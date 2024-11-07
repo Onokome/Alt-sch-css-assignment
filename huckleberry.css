@@ -1,0 +1,137 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+h2 {
+  font-family: "Lato", system-ui;
+  font-weight: 900;
+  font-style: normal;
+}
+
+p {
+  font-family: "Lato", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  line-height: 30px;
+  font-size: 24px;
+  padding-block-end: 16px;
+  font-size: 20px;
+}
+
+strong {
+  color: hsla(160, 100%, 30%, 1);
+}
+
+.wrapper {
+  background-color: hsla(0, 0%, 100%, 1);
+}
+
+section#bottom {
+  background-color: hsla(0, 0%, 40%, 1);
+  border-top: 8px solid hsla(0, 0%, 60%, 1);
+  padding-block-end: 58px;
+  padding-block-start: 72px;
+}
+
+section#header {
+  margin: 0 auto;
+  max-width: 800px;
+  padding-inline: 24px;
+  padding-block-end: 64px;
+
+  > h2 {
+    padding-block-start: 96px;
+    padding-block-end: 48px;
+    line-height: 38.8px;
+    font-size: 32px;
+  }
+
+  > p {
+    max-width: 415px;
+  }
+}
+
+div.card {
+  margin: 0 auto;
+  max-width: 808px;
+  background-color: hsla(0, 0%, 100%, 1);
+  padding-inline: 24px;
+  border-bottom: 8px solid hsla(0, 0%, 60%, 1);
+  padding-block-end: 24px;
+  padding-block-start: 8px;
+}
+
+.card > h2 {
+  background-color: hsla(45, 100%, 50%, 1);
+  border-bottom: 8px solid hsla(45, 100%, 40%, 1);
+  padding-top: 16px;
+  padding-bottom: 15px;
+  padding-inline: 32px;
+  width: 398px;
+  height: 60px;
+  margin-inline-start: -32px;
+  margin-block-end: 16px;
+  line-height: 28.8px;
+  font-size: 23px;
+}
+
+@media (max-width: 390px) {
+  .card {
+    max-width: 390px;
+  }
+  .card > h2 {
+    max-width: 318px;
+    padding-block-start: 12px;
+    padding-block-end: 12px;
+    padding-inline-start: 32px;
+    padding-inline-end: 24px;
+    font-size: 22px;
+    height: 82px;
+    
+  }
+}
