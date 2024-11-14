@@ -170,6 +170,7 @@ div.submit input{
   padding-block-start: 16px;
 padding-block-end: 16px;
 font-weight: bolder;
+margin-block-end: 0px;
 }
 
  div .border-input input {
@@ -177,12 +178,26 @@ font-weight: bolder;
   box-sizing: border-box;
  }
 
- .footer p{
+  
+
+p.desktop-only{
+  display: none;
+}
+
+.footer p {
+  display: block; 
+}
+
+form p#register {
+  display: none;
+}
+
+.footer p{
   width: 316px;
   line-height: 25px;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400px;
+  font-weight: 400;
   font-style: normal;
   letter-spacing: 0.2px;
   text-align: center;
@@ -194,14 +209,13 @@ font-weight: bolder;
 
   >span{
     color: hsla(174, 62%, 47%, 1);
-    font-weight: 500px;
+    font-weight: 500;
   }
   
- }
-
-p.desktop-only{
-  display: none;
 }
+
+ 
+
 
 @media (min-width: 1024px){
 div.main{
@@ -288,6 +302,14 @@ section.form-group{
   pointer-events: none; 
 }
 
+.footer p {
+  display: none;
+}
+
+form p#register {
+  display: block;
+}
+
 
 div.group2{
   width:500px
@@ -299,14 +321,32 @@ div.group2{
   div.group2 input{
     width: 500px;
   }
- 
-  .footer p{
+
+  p#register {
     width: 463px;
-    margin-inline-start: 58px;
+    line-height: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.2px;
+    text-align: center;
     font-size: 12px;
-    
-  }
+    margin-inline-start: 6px;
+    margin-block-start: 8px;
+    margin-block-end: 16px;
+    }
+  
+  
+    p#register >span{
+      color: hsla(174, 62%, 47%, 1);
+      font-weight: 500;
+      text-decoration: underline;
+    }
+  
+  
+
 }
 
 
-  
+ 
